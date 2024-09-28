@@ -15,3 +15,4 @@
 
 5. npm i -D tailwind-merge
 
+npm i react-redux @reduxjs/toolkit redux-persist dotenv
