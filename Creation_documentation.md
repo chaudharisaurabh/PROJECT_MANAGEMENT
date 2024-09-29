@@ -24,3 +24,11 @@ npm i react-redux @reduxjs/toolkit redux-persist dotenv
  npx prisma generate
 
  npx prisma migrate dev --name init
+
+
+ backend installs
+
+ npm i express body-parser cors dotenv helmet morgan
+
+ npm i -D rimraf concurrently rimraf nodemon @types/morgan @types/cors @types/express @types/morgan @types/node
+

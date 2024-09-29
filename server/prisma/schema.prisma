@@ -60,7 +60,7 @@ model ProjectTeam{
     teamId          Int
     projectId                Int
     team                Team?           @relation(fields: [teamId],references: [id])
-    project     Project                 @relation(fields: [projectId],references: [id])
+    project           Project                 @relation(fields: [projectId],references: [id])
 }
 
 model Task {
