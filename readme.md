@@ -1,4 +1,4 @@
-# About app (In progress)
+# About app (Documentation in progress)
 
 ## Table of contents
 

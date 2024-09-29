@@ -16,3 +16,11 @@
 5. npm i -D tailwind-merge
 
 npm i react-redux @reduxjs/toolkit redux-persist dotenv
+
+ npx tsc --init
+
+ npm i -D ts-node typescript @types/node
+
+ npx prisma generate
+
+ npx prisma migrate dev --name init
