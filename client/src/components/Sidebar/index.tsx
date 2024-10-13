@@ -1,5 +1,8 @@
+"use client";
+
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { setIsSidebarCollapsed } from "@/state";
+import { useGetProjectsQuery } from "@/state/api";
 import {
   AlertCircle,
   AlertOctagon,
@@ -27,6 +30,7 @@ import React, { useState } from "react";
 const Sidebar = () => {
     const [showProjects, setShowProjects] =useState(true);
     const [showPriority, setShowPriority] =useState(true);
+    const {data :projects }  = useGetProjectsQuery();
 
     const dispatch = useAppDispatch();
     const isSidebarCollapsed = useAppSelector(
@@ -75,7 +79,8 @@ const Sidebar = () => {
 
         </div>
 
-        {/**NAVBAR LINKS */}
+
+        {/* NAVBAR LINKS */}
 
         <nav className="z-10 w-full">
             <SidebarLink icon={Home} label="Home" href="/" />
@@ -97,7 +102,22 @@ const Sidebar = () => {
                 <ChevronDown className="h-5 w-5"/>
             )}
         </button>
-        {/**PROJECTS LINKS */}
+        {/**PROJECTS LISTs*/}
+        { console.log("logging projects",projects) }
+
+        {   
+            showProjects && 
+            projects?.map((project )=>(
+                <SidebarLink
+                key={project.id}
+                icon = {Briefcase}
+                label = {project.name}
+                href = {`/projects/${project.id}`} /> 
+            ))
+        }
+        
+
+
 
             {/**Priority links */}
         <button
