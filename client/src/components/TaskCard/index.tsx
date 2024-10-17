@@ -13,9 +13,8 @@ const TaskCard = ({ task }: Props) => {
       {task.attachments && task.attachments.length > 0 && (
         <div>
           <strong>Attachments:</strong>
-          {/* <div className="flex flex-wrap">
-            {task.attachments && task.attachments.length > 0 && 
-            (
+          <div className="flex flex-wrap">
+            {/* {task.attachments && task.attachments.length > 0 && (
               <Image
                 src={`https://pm-s3-images.s3.us-east-2.amazonaws.com/${task.attachments[0].fileURL}`}
                 alt={task.attachments[0].fileName}
@@ -23,9 +22,8 @@ const TaskCard = ({ task }: Props) => {
                 height={200}
                 className="rounded-md"
               />
-            )
-            }
-          </div> */}
+            )} */}
+          </div>
         </div>
       )}
       <p>

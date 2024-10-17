@@ -9,7 +9,7 @@ import {
   Table,
 } from "lucide-react";
 import React, { useState } from "react";
-import ModalNewProject from "./ModelNewProject";
+import ModalNewProject from "./ModalNewProject";
 
 type Props = {
   activeTab: string;
@@ -112,4 +112,3 @@ const TabButton = ({ name, icon, setActiveTab, activeTab }: TabButtonProps) => {
 };
 
 export default ProjectHeader;
-
