@@ -2,4 +2,4 @@
 
 # dev preview
 
-npm run dev
+run the command --> npm run dev
