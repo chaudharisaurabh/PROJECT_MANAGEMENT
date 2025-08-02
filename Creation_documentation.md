@@ -2,7 +2,7 @@
 
 [back](readme.md)
 
-# Steps
+# Steps (packages installation)
 
 1. create next app using ```  npx create-next-app@latest ```
 2. Install packages for ui element using 
